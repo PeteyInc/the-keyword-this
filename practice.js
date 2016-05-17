@@ -23,10 +23,17 @@
   //email --> which is a string
   //getUsername --> which is a function that returns the current object's username property. *Don't use 'user' instead use the 'this' keyword*
 
-    //Code Here
+var user = {
+  username: "jaredmpeterson",
+  email: "jared@peteyinc.com",
+  getUsername: function() {
+    return this.username;
+  }
+};
 
 //Now, invoke the getUsername method and verify you got the username of the object and not anything else.
 
+user.getUsername();
 
 //Next Problem
 
